@@ -3,7 +3,6 @@ import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Register from "./components/register/Register";
-import Login from "./components/Login/Login";
 import Layout from "./components/Layout";
 import RequiredAuth from "./components/RequiredAuth";
 import Recommended from "./components/recommended/Recommended";
@@ -11,6 +10,7 @@ import Review from "./components/review/Review";
 import useAuth from "./hook/useAuth";
 import axiosClient from "./api/axiosConfig";
 import StreamMovie from "./components/stream/StreamMovie";
+import Login from "./components/login/Login";
 
 function App() {
   const navigate = useNavigate();

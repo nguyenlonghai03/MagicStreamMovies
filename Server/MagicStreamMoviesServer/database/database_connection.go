@@ -15,7 +15,7 @@ func Connect() *mongo.Client {
 	err := godotenv.Load(".env")
 
 	if err != nil {
-		log.Println("Error loading .env file")
+		log.Println("Error loading .env file ne")
 	}
 
 	MongoDb := os.Getenv("MONGODB_URI")
@@ -23,8 +23,6 @@ func Connect() *mongo.Client {
 	if MongoDb == "" {
 		log.Fatal("MONGODB_URI not set!")
 	}
-
-	fmt.Println("MongoDB URL: ", MongoDb)
 
 	clientOptions := options.Client().ApplyURI(MongoDb)
 
