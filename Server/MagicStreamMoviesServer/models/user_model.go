@@ -26,12 +26,12 @@ type UserLogin struct {
 }
 
 type UserResponse struct {
-	UserID          string  `json:"user_id"`
-	FirstName       string  `json:"first_name"`
-	LastName        string  `json:"last_name"`
-	Email           string  `json:"email"`
-	Role            string  `json:"role"`
-	Token           string  `json:"token"`
-	RefreshToken    string  `json:"refresh_token"`
+	UserID    string `json:"user_id"`
+	FirstName string `json:"first_name"`
+	LastName  string `json:"last_name"`
+	Email     string `json:"email"`
+	Role      string `json:"role"`
+	// Token           string  `json:"token"`
+	// RefreshToken    string  `json:"refresh_token"`
 	FavouriteGenres []Genre `json:"favourite_genres"`
 }
